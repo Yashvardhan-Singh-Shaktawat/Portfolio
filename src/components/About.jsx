@@ -9,7 +9,7 @@ export default function About() {
           
           <div className="about-photo-panel">
               <div className="photo-bg-glow"></div>
-              <img src={aboutMeImg} alt="Yashvardhan Singh Shaktawat" className="about-avatar" width="350" height="480" />
+              <img src={aboutMeImg} alt="Yashvardhan Singh Shaktawat" className="about-avatar" width="350" height="480" loading="lazy" />
           </div>
           
           <div className="about-text-panel">

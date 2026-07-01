@@ -13,7 +13,9 @@ export default function Projects() {
   const sliderRef = useRef(null);
 
   useEffect(() => {
-    const ctx = gsap.context(() => {
+    const mm = gsap.matchMedia();
+
+    mm.add("(min-width: 769px)", () => {
       const slider = sliderRef.current;
       if (!slider) return;
 
@@ -29,9 +31,9 @@ export default function Projects() {
           invalidateOnRefresh: true,
         },
       });
-    }, sectionRef);
+    });
 
-    return () => ctx.revert();
+    return () => mm.revert();
   }, []);
 
   return (
@@ -59,7 +61,7 @@ export default function Projects() {
         {projects.map((project) => (
           <div className="card" key={project.id}>
             <div className="card-image-wrapper">
-              <img src={project.image} alt={project.title} />
+              <img src={project.image} alt={project.title} loading="lazy" />
               <span className="project-card-label">{project.label}</span>
               <span className="project-card-status">{project.status}</span>
             </div>

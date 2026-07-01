@@ -1,15 +1,17 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, lazy, Suspense } from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
-import Projects from './components/Projects';
-import ScrollAnimationSection from './components/ScrollAnimationSection';
-import Skills from './components/Skills';
-import GithubSection from './components/GithubSection';
-import Education from './components/Education';
-import Contact from './components/Contact';
-import Faq from './components/Faq';
 import Footer from './components/Footer';
+
+// Lazy load below-the-fold components
+const Projects = lazy(() => import('./components/Projects'));
+const ScrollAnimationSection = lazy(() => import('./components/ScrollAnimationSection'));
+const Skills = lazy(() => import('./components/Skills'));
+const GithubSection = lazy(() => import('./components/GithubSection'));
+const Education = lazy(() => import('./components/Education'));
+const Faq = lazy(() => import('./components/Faq'));
+const Contact = lazy(() => import('./components/Contact'));
 
 function App() {
   // Initialize theme from localStorage, default to light theme for mockup feel
@@ -34,13 +36,27 @@ function App() {
       <main style={{ marginTop: '70px' }}>
         <Hero />
         <About />
-        <Projects />
-        <ScrollAnimationSection />
-        <Skills />
-        <GithubSection theme={theme} />
-        <Education />
-        <Faq />
-        <Contact />
+        <Suspense fallback={<div style={{ minHeight: '400px', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'var(--text-secondary)' }}>Loading projects...</div>}>
+          <Projects />
+        </Suspense>
+        <Suspense fallback={null}>
+          <ScrollAnimationSection />
+        </Suspense>
+        <Suspense fallback={null}>
+          <Skills />
+        </Suspense>
+        <Suspense fallback={null}>
+          <GithubSection theme={theme} />
+        </Suspense>
+        <Suspense fallback={null}>
+          <Education />
+        </Suspense>
+        <Suspense fallback={null}>
+          <Faq />
+        </Suspense>
+        <Suspense fallback={null}>
+          <Contact />
+        </Suspense>
       </main>
       <Footer />
     </>

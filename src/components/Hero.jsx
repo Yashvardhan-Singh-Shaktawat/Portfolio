@@ -1,6 +1,5 @@
 import React from 'react';
 import './Hero.css';
-import heroCharacter from '../assets/hero-character.webp';
 
 export default function Hero() {
   return (
@@ -47,7 +46,7 @@ export default function Hero() {
             <div className="hero-image-wrapper">
               <div className="hero-image-glow"></div>
               <img
-                src={heroCharacter}
+                src="/hero-character.webp"
                 alt="3D developer character"
                 className="hero-character-image animate-float"
                 width="360"
