@@ -1,0 +1,6 @@
+# robots.txt for Yashvardhan Singh Shaktawat Portfolio
+User-agent: *
+Allow: /
+Disallow: /api/
+
+Sitemap: https://yashvardhan.dev/sitemap.xml

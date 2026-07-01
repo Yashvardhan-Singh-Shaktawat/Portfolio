@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="100%" height="100%">
+  <!-- Definition block for premium, subtle gradients -->
+  <defs>
+    <linearGradient id="ochreGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#D6CFB5" /> <!-- Sandstone -->
+      <stop offset="100%" stop-color="#A45A3D" /> <!-- Terracotta Ochre -->
+    </linearGradient>
+  </defs>
+
+  <!-- Plaster Off-White Ground Layer -->
+  <rect width="64" height="64" rx="16" fill="#F4EFE6"/>
+  
+  <!-- Architectural Intersect Plan View (Forms 'Y') -->
+  <!-- Left structural wall -->
+  <path d="M18 20 L32 34 L32 50" stroke="#2E2E2E" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  
+  <!-- Floating Facet Angle -->
+  <path d="M46 20 L32 34" stroke="url(#ochreGrad)" stroke-width="6" stroke-linecap="round" fill="none"/>
+  
+  <!-- Perspective Baseline Node -->
+  <circle cx="32" cy="50" r="3" fill="#A45A3D"/>
+</svg>

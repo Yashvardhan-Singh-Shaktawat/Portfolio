@@ -1,0 +1,195 @@
+/* Container Layout */
+.about-section-container {
+    max-width: 1150px;
+    margin: 80px auto;
+    padding: 0 24px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+/* The Combined Card Window */
+.about-grid-wrapper {
+    display: grid;
+    grid-template-columns: 0.95fr 1.05fr;
+    gap: 64px;
+    align-items: center;
+}
+
+/* Left Column Styling (Photo Frame) */
+.about-photo-panel {
+    position: relative;
+    display: flex;
+    align-items: flex-end; /* Locks portrait to the baseline edge */
+    justify-content: center;
+    padding-top: 60px;
+    width: 100%;
+    max-width: 440px;
+    margin: 0 auto;
+}
+
+/* The studio backdrop lighting effect */
+.photo-bg-glow {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(circle, rgba(0,0,0,0.03) 0%, transparent 70%);
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.about-avatar {
+    max-width: 80%;
+    height: auto;
+    display: block;
+    z-index: 2;
+    /* Soft drop shadow to elevate the portrait off the canvas */
+    filter: drop-shadow(0 15px 30px rgba(0, 0, 0, 0.08)) grayscale(100%); /* Grayscale by default as requested originally */
+    transition: filter var(--transition-normal, 0.3s) ease, transform var(--transition-normal, 0.3s) ease;
+}
+
+.about-avatar:hover {
+    filter: drop-shadow(0 20px 35px rgba(0, 0, 0, 0.15)) grayscale(0%);
+    transform: scale(1.02);
+}
+
+.about-text-panel {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.section-tag {
+    color: #16a34a; /* Sleek structural green */
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.section-title {
+    font-size: 2.75rem;
+    font-weight: 800;
+    color: #111111;
+    margin: 0 0 24px 0;
+    letter-spacing: -0.5px;
+}
+
+/* Typography Hierarchy */
+.about-bio p {
+    color: #4b5563;
+    line-height: 1.65;
+    font-size: 1.05rem;
+    margin-bottom: 18px;
+}
+
+.bio-lead {
+    font-size: 1.2rem !important;
+    color: #1f2937 !important;
+    font-weight: 400;
+}
+
+/* Separation Rules for Sub-Cards */
+.about-highlights {
+    margin-top: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding-top: 28px;
+}
+
+.highlight-item {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.icon-box {
+    font-size: 1.25rem;
+    background: #f4f4f2;
+    padding: 10px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 24px;
+}
+
+.highlight-content h4 {
+    margin: 0 0 4px 0;
+    color: #111111;
+    font-size: 1.05rem;
+    font-weight: 600;
+}
+
+.highlight-content p {
+    margin: 0;
+    color: #6b7280;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+/* Complete Mobile Adaptation */
+@media (max-width: 900px) {
+    .about-grid-wrapper {
+        grid-template-columns: 1fr; /* Stacks image on top of text */
+    }
+    
+    .about-photo-panel {
+        padding-top: 40px;
+        border-right: none;
+    }
+    
+    .about-text-panel {
+        padding: 0;
+    }
+    
+    .section-title {
+        font-size: 2.25rem;
+    }
+}
+
+/* -------------------------------------------------------------
+   DARK MODE ADJUSTMENTS FOR THEME COMPATIBILITY
+   ------------------------------------------------------------- */
+[data-theme='dark'] .about-grid-wrapper {
+    background: transparent;
+    box-shadow: none;
+    border: none;
+}
+
+[data-theme='dark'] .about-photo-panel {
+    background: transparent;
+}
+
+[data-theme='dark'] .photo-bg-glow {
+    background: radial-gradient(circle, rgba(255,255,255,0.02) 0%, transparent 70%);
+}
+
+[data-theme='dark'] .section-title {
+    color: var(--text-primary, #f4f4f5);
+}
+
+[data-theme='dark'] .highlight-content h4 {
+    color: var(--text-primary, #f4f4f5);
+}
+
+[data-theme='dark'] .about-bio p {
+    color: var(--text-secondary, #a1a1aa);
+}
+
+[data-theme='dark'] .bio-lead {
+    color: var(--text-primary, #f4f4f5) !important;
+}
+
+[data-theme='dark'] .highlight-content p {
+    color: var(--text-muted, #71717a);
+}
+
+[data-theme='dark'] .icon-box {
+    background: var(--bg-tertiary, #191d26);
+}
+
+/* Mobile dark mode borders removed */

@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+.portfolio-scroll-container {
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  padding: 80px 8vw;
+  box-sizing: border-box;
+  align-items: center;
+  border-top: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
+  transition: background-color var(--transition-normal);
+  overflow: hidden;
+  position: relative;
+}
+
+/* --- Left Layout (Text & Descriptions) --- */
+.left-content-panel {
+  flex: 1.2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 40px;
+  z-index: 10;
+}
+
+.pixel-font {
+  font-family: 'Press Start 2P', monospace;
+  color: var(--text-primary);
+  text-transform: uppercase;
+}
+
+.project-solutions-box {
+  border: 2px solid var(--text-primary);
+  padding: 30px;
+  background: var(--bg-secondary);
+  border-radius: 12px;
+  max-width: 500px;
+  box-shadow: var(--shadow-md);
+  transition: background-color var(--transition-normal), border-color var(--transition-normal);
+}
+
+.project-solutions-box h3 {
+  font-size: 0.85rem;
+  margin-bottom: 25px;
+  color: var(--accent-color);
+  line-height: 1.4;
+  letter-spacing: -0.5px;
+}
+
+.solution-item {
+  font-size: 0.65rem;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.solution-item .problem {
+  color: var(--text-primary);
+}
+
+.solution-item .solved {
+  color: var(--text-secondary);
+  margin-top: 5px;
+  display: block;
+}
+
+.status-terminal {
+  font-size: 0.7rem;
+  line-height: 1.8;
+  color: var(--text-secondary);
+}
+
+.terminal-divider {
+  border: none;
+  border-top: 2px dashed var(--border-color);
+  margin: 15px 0;
+}
+
+/* --- Right Layout (Fixed Computer Station) --- */
+.right-visual-panel {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.fixed-computer {
+  position: relative;
+  width: 350px;
+}
+
+.fixed-computer > img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* --- Scroll Animated Layers --- */
+.scroll-floating {
+  position: absolute;
+  will-change: transform;
+  transition: transform 0.1s cubic-bezier(0.1, 0.8, 0.2, 1);
+}
+
+.sticky-note {
+  width: 120px;
+  top: -50px;
+  left: -40px;
+  transform: translate(
+    calc(var(--scroll-y, 0) * -0.1px),
+    calc(var(--scroll-y, 0) * -0.12px)
+  ) rotate(calc(var(--scroll-y, 0) * -0.02deg));
+}
+
+.email-envelope {
+  width: 150px;
+  bottom: -40px;
+  right: -50px;
+  transform: translate(
+    calc(var(--scroll-y, 0) * 0.18px),
+    calc(var(--scroll-y, 0) * 0.12px)
+  ) rotate(calc(var(--scroll-y, 0) * 0.01deg));
+}
+
+.scroll-floating img {
+  width: 100%;
+  height: auto;
+}
+
+/* --- Responsive adjustment --- */
+@media (max-width: 992px) {
+  .portfolio-scroll-container {
+    flex-direction: column;
+    padding: 80px 20px;
+    gap: 80px;
+  }
+  
+  .left-content-panel {
+    align-items: center;
+    text-align: center;
+  }
+  
+  .project-solutions-box {
+    max-width: 100%;
+  }
+
+  .solution-item .solved {
+    margin-left: 0;
+  }
+  
+  .right-visual-panel {
+    width: 100%;
+  }
+
+  .fixed-computer {
+    width: 280px;
+  }
+}
