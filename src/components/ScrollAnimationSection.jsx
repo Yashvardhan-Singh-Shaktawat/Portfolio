@@ -1,9 +1,9 @@
 import React, { useEffect, useRef } from 'react';
 import './ScrollAnimationSection.css';
 
-import ComputerImg from '../assets/computer_fixed.png';
-import StickyNoteImg from '../assets/sticky_note_wink.png';
-import EmailEnvelopeImg from '../assets/envelope_orange.png';
+import ComputerImg from '../assets/computer_fixed.webp';
+import StickyNoteImg from '../assets/sticky_note_wink.webp';
+import EmailEnvelopeImg from '../assets/envelope_orange.webp';
 
 const ScrollAnimationSection = () => {
   const containerRef = useRef(null);

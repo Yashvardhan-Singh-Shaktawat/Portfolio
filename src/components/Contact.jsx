@@ -67,7 +67,7 @@ export default function Contact() {
       <div className="container">
         <div className="section-header">
           <span className="section-tag">Connection</span>
-          <h2 className="section-title">How can you contact Yashvardhan Singh Shaktawat?</h2>
+          <h2 className="section-title">Contact a Full Stack React & AI Developer</h2>
         </div>
 
         <div className="contact-layout">

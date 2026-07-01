@@ -1,6 +1,6 @@
 import React from 'react';
 import './Hero.css';
-import heroCharacter from '../assets/hero-character.png';
+import heroCharacter from '../assets/hero-character.webp';
 
 export default function Hero() {
   return (
@@ -12,13 +12,13 @@ export default function Hero() {
             <span className="hero-tagline">Welcome to my lab</span>
 
             <h1 className="hero-title">
-              Crafting<br />
-              <span className="gradient-text">Intelligent</span><br />
-              Systems
+              Full Stack<br />
+              <span className="gradient-text">React & AI</span><br />
+              Developer
             </h1>
 
             <p className="hero-subtitle">
-              Hi, I'm <strong>Yashvardhan Singh Shaktawat</strong>. I am a B.Tech Computer Science & Engineering student specializing in full-stack web development, IoT systems, and applied machine learning.
+              Hi, I'm <strong>Yashvardhan Singh Shaktawat</strong>. I am a Full Stack Developer specializing in React, Next.js, Node.js, AI, and Machine Learning. I build scalable web applications, real-time IoT networks, and modern user experiences.
             </p>
 
             <div className="hero-actions">

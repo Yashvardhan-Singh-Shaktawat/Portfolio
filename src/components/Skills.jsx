@@ -48,7 +48,7 @@ export default function Skills() {
         
         <div className="section-header" style={{ textAlign: 'left' }}>
           <span className="section-tag">Tech Stack</span>
-          <h2 className="section-title">What technical skills and tools does Yashvardhan specialize in?</h2>
+          <h2 className="section-title">React, Next.js & Machine Learning Skills</h2>
         </div>
 
         {/* Structured Data Table for LLM bots & Screen Readers (GEO) */}

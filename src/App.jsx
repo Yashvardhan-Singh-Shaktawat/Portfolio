@@ -8,6 +8,7 @@ import Skills from './components/Skills';
 import GithubSection from './components/GithubSection';
 import Education from './components/Education';
 import Contact from './components/Contact';
+import Faq from './components/Faq';
 import Footer from './components/Footer';
 
 function App() {
@@ -38,6 +39,7 @@ function App() {
         <Skills />
         <GithubSection theme={theme} />
         <Education />
+        <Faq />
         <Contact />
       </main>
       <Footer />

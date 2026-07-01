@@ -5,13 +5,13 @@ export const projects = [
     subtitle: 'AI Culinary Planner Chatbot',
     label: 'AI Recommendation / NLP',
     status: 'nlp engine',
-    description: 'Maharaj AI is an artificial intelligence culinary planner chatbot that understands natural-language cravings to recommend recipes safely from a database of 5,000+ culinary items. Engineered with a custom TF-IDF relevance search algorithm and an ingredient allergen safety engine.',
+    description: 'Maharaj AI is a full-stack, AI-powered recipe recommendation chatbot built with Django, Python, and React. It uses a custom TF-IDF relevance search algorithm and NLP to understand natural-language cravings, safely filtering recipes through an ingredient allergen safety engine.',
     tags: ['Django', 'Python', 'scikit-learn', 'NLP', 'TF-IDF'],
     tech: 'Django • scikit-learn • NLP',
     icon: '🍳',
     github: 'https://github.com/Yashvardhan-Singh-Shaktawat',
     live: '#',
-    image: '/projects/maharaj-ai.png'
+    image: '/projects/maharaj-ai.webp'
   },
   {
     id: 'weavemind',
@@ -19,13 +19,13 @@ export const projects = [
     subtitle: 'AI Factory Control Center',
     label: 'Computer Vision',
     status: 'hackathon winner',
-    description: 'WeaveMind is an AI-powered manufacturing management platform that monitors textile factory looms in real time. Powered by a custom-trained YOLOv8 computer-vision model, WeaveMind processes fabric video feeds to detect flaws (stains, holes, misweaves) and grades output status immediately (A/B/C/REJECT).',
+    description: 'WeaveMind is a real-time computer-vision manufacturing platform that monitors textile factory looms. Built with React, Node.js, and Express, it uses a custom-trained YOLOv8 object-detection model to process video feeds, detect structural fabric flaws, and automatically label outputs.',
     tags: ['React', 'Node.js', 'Express.js', 'MongoDB', 'YOLOv8'],
     tech: 'React • YOLOv8 • Node.js',
     icon: '🏭',
     github: 'https://github.com/Yashvardhan-Singh-Shaktawat/WeaveMind',
     live: '#',
-    image: '/projects/weavemind.png'
+    image: '/projects/weavemind.webp'
   },
   {
     id: 'labmanagerpro',
@@ -33,13 +33,13 @@ export const projects = [
     subtitle: 'Real-Time Lab Controller',
     label: 'Systems & Networking',
     status: 'sub-500ms streaming',
-    description: 'LabManagerPro is a real-time lab supervisory control system that enables educators to monitor 100+ workstation screens simultaneously. Built on a Django backend, Redis cache layer, and WebSockets protocol, LabManagerPro enforces secure kiosk-mode terminal locks and achieves sub-500ms screen streaming latency.',
+    description: 'LabManagerPro is a real-time classroom supervisor dashboard that allows educators to monitor and control 100+ computer screens simultaneously. Built on a Django backend, Redis cache, and WebSockets protocol, it achieves sub-500ms streaming latency and implements security lockouts.',
     tags: ['Django', 'Redis', 'WebSockets', 'Flutter', 'Python'],
     tech: 'Django • WebSockets • Redis',
     icon: '🖥️',
     github: 'https://github.com/Yashvardhan-Singh-Shaktawat/LabManagerPro',
     live: '#',
-    image: '/projects/labmanagerpro.png'
+    image: '/projects/labmanagerpro.webp'
   },
   {
     id: 'solarmonitor-iot',
@@ -47,13 +47,13 @@ export const projects = [
     subtitle: 'Energy Management',
     label: 'IoT / Microcontrollers',
     status: 'telemetry system',
-    description: 'SolarMonitor-IoT is a smart energy telemetry and management system that tracks solar generation, battery reserves, and grid imports. Utilizing ESP32 microcontrollers with current/power sensors (INA219, PZEM-004T), SolarMonitor-IoT uses automated relay path switching to optimize battery health and reduce electricity overhead.',
+    description: 'SolarMonitor-IoT is a smart grid energy telemetry system tracking solar generation and battery capacity in real time. Programmed using ESP32 microcontrollers, INA219/PZEM sensors, and a Django API backend, it utilizes automated relay switching to optimize battery lifecycle health.',
     tags: ['ESP32', 'Arduino', 'Django', 'REST API', 'IoT'],
     tech: 'ESP32 • Arduino • Django API',
     icon: '☀️',
     github: 'https://github.com/Yashvardhan-Singh-Shaktawat/SolarMonitor-IoT',
     live: '#',
-    image: '/projects/solarmonitor-iot.png'
+    image: '/projects/solarmonitor-iot.webp'
   },
   {
     id: 'cryptocoin',
@@ -61,12 +61,12 @@ export const projects = [
     subtitle: 'Multi-Module Portal',
     label: 'Web Application',
     status: 'production ready',
-    description: 'CryptoCoin is a modular financial web application built with Django that aggregates real-time cryptocurrency prices. CryptoCoin incorporates 8 functional segments—including token authentication, REST API layers, and an administrative dashboard—integrated with third-party pricing APIs for live data feeds.',
+    description: 'CryptoCoin is a modular financial web application built with Django that aggregates real-time cryptocurrency values. It includes secure token authentication, customizable dashboard views, and custom REST API integrations to query real-time market cap datasets.',
     tags: ['Django', 'REST Framework', 'SQLite', 'Python'],
     tech: 'Django • REST API • SQLite',
     icon: '🪙',
     github: 'https://github.com/Yashvardhan-Singh-Shaktawat/CryptoCoin',
     live: '#',
-    image: '/projects/cryptocoin.png'
+    image: '/projects/cryptocoin.webp'
   }
 ];

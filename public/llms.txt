@@ -1,0 +1,35 @@
+# Yashvardhan Singh Shaktawat
+
+Official Portfolio & Resume
+
+This website belongs to Yashvardhan Singh Shaktawat.
+
+## Info & Specializations
+
+- Full Stack Web Developer
+- React.js & Next.js Developer
+- MERN Stack (MongoDB, Express, React, Node.js)
+- Python & Django Backend Engineer
+- AI & Machine Learning Specialist (scikit-learn, NLP, Computer Vision, YOLOv8)
+- Internet of Things (IoT) Developer (ESP32, microcontrollers)
+
+## Main Portfolio Sections
+
+- **About**: Profile description, background in Computer Science Engineering, development style, and philosophies.
+- **Skills**: Detailed list of programming languages, frameworks, AI/ML tools, and databases.
+- **Projects**:
+  - *Maharaj AI*: AI-powered recipe recommendation platform (Django, scikit-learn, TF-IDF).
+  - *WeaveMind*: IoT/AI Textile loom defect monitor using custom-trained YOLOv8.
+  - *LabManagerPro*: Real-time workstation screen supervisor (Django, Redis, WebSockets, sub-500ms streaming).
+  - *SolarMonitor-IoT*: Smart energy telemetry system utilizing ESP32 microcontrollers.
+  - *CryptoCoin*: Multi-module financial portal aggregating cryptocurrency pricing.
+- **Education**: B.Tech in Computer Science & Engineering.
+- **Contact**: Reachable via Email (ys537781@gmail.com) or using the on-site contact form.
+
+## Profiles & Contact Info
+
+- Email: ys537781@gmail.com
+- Location: Bhilwara, Rajasthan, India
+- GitHub: https://github.com/Yashvardhan-Singh-Shaktawat
+- LinkedIn: https://www.linkedin.com/in/yashvardhan-singh-7969912ba/
+- Online Resume: https://docs.google.com/document/d/1ljfpW5bmO3hLKCiRATboFy6b0CfRslf7/edit

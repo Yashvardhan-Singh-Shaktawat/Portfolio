@@ -1,6 +1,6 @@
 import React from 'react';
 import './About.css';
-import aboutMeImg from '../assets/about-me.png';
+import aboutMeImg from '../assets/about-me.webp';
 
 export default function About() {
   return (
@@ -14,14 +14,20 @@ export default function About() {
           
           <div className="about-text-panel">
               <span className="section-tag">GET TO KNOW ME</span>
-              <h2 className="section-title">Who is Yashvardhan Singh Shaktawat?</h2>
+              <h2 className="section-title">About Yashvardhan Singh Shaktawat | Full Stack Developer</h2>
               
               <div className="about-bio">
                   <p className="bio-lead">
-                      Hi there! I'm <strong>Yashvardhan Singh Shaktawat</strong>, a Computer Science Engineer who sits at the intersection of robust software architectures and intelligent hardware.
+                      Hi there! I'm <strong>Yashvardhan Singh Shaktawat</strong>, a Full Stack Developer and Software Engineer who sits at the intersection of robust software architectures and intelligent AI-driven applications.
                   </p>
                   <p className="bio-body">
-                      Whether I am architecting full-stack web applications with Django or linking microcontrollers to the cloud, I love building reliable systems from scratch. I focus on translating intricate backend logic into performant, clean, and highly visual user experiences.
+                      I specialize in crafting high-performance user interfaces with <strong>React.js</strong> and <strong>Next.js</strong>, coupled with scalable server infrastructures built on <strong>Django</strong>, <strong>Node.js</strong>, and <strong>Express</strong>. My background in Computer Science Engineering drives me to build robust systems from the ground up, ensuring clean code, optimal data structures, and intuitive user experiences.
+                  </p>
+                  <p className="bio-body">
+                      Beyond core web engineering, I work with Applied Machine Learning, Computer Vision, and real-time streaming protocols. I have engineered real-time dashboard applications using <strong>WebSockets</strong> and <strong>Redis</strong>, trained custom object-detection models (using <strong>YOLOv8</strong>) for industrial visual audits, and integrated <strong>ESP32 microcontrollers</strong> for smart IoT networks.
+                  </p>
+                  <p className="bio-body">
+                      I am passionate about translating complex backend architectures into responsive, visually striking web experiences. My work is optimized for performance, security, and usability, ensuring that every project is production-ready. Whether architecting database schemas in <strong>PostgreSQL</strong> or configuring real-time telemetry relays, I strive to write self-documenting code and deploy robust, high-availability solutions.
                   </p>
               </div>
               

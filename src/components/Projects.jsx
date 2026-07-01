@@ -42,7 +42,7 @@ export default function Projects() {
         <div className="intro-card">
           <div>
             <span className="section-tag">Portfolio</span>
-            <h2 className="section-title">What technical projects has Yashvardhan built?</h2>
+            <h2 className="section-title">Full Stack Development & AI Projects</h2>
             <p className="intro-text">
               A curated collection of my work spanning Full-Stack Engineering, Applied Machine Learning, IoT systems, and Computer Vision.
             </p>

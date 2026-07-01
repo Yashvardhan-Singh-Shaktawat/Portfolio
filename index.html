@@ -4,10 +4,36 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Yashvardhan Singh Shaktawat | Portfolio & Resume</title>
-    <meta name="description" content="Portfolio and interactive resume of Yashvardhan Singh Shaktawat, B.Tech CSE student, Full Stack Developer, and AI/ML enthusiast." />
+    <title>Yashvardhan Singh Shaktawat | Full Stack React & AI Developer Portfolio</title>
+    <meta name="description" content="Portfolio and interactive resume of Yashvardhan Singh Shaktawat, a Full Stack React Developer, Next.js Engineer, and AI/ML specialist building intelligent web applications." />
     <link rel="canonical" href="https://yashvardhan.dev/" />
     
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://yashvardhan.dev/" />
+    <meta property="og:title" content="Yashvardhan Singh Shaktawat | Full Stack React & AI Developer Portfolio" />
+    <meta property="og:description" content="Explore the portfolio of Yashvardhan Singh Shaktawat: Full Stack React/Next.js developer, Django engineer, and AI/ML practitioner." />
+    <meta property="og:image" content="https://yashvardhan.dev/assets/about-me.webp" />
+
+    <!-- Twitter / X -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://yashvardhan.dev/" />
+    <meta name="twitter:title" content="Yashvardhan Singh Shaktawat | Full Stack React & AI Developer Portfolio" />
+    <meta name="twitter:description" content="Explore the portfolio of Yashvardhan Singh Shaktawat: Full Stack React/Next.js developer, Django engineer, and AI/ML practitioner." />
+    <meta name="twitter:image" content="https://yashvardhan.dev/assets/about-me.webp" />
+
+    <!-- Google Analytics 4 (GA4) Skeleton -->
+    <!-- To activate, replace G-XXXXXXXXXX with your actual GA4 Measurement ID -->
+    <!-- 
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-XXXXXXXXXX');
+    </script>
+    -->
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -30,36 +56,87 @@
 
     <!-- Schema.org JSON-LD Structured Data (SEO/GEO) -->
     <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "ProfilePage",
-        "mainEntity": {
+      [
+        {
+          "@context": "https://schema.org",
           "@type": "Person",
+          "@id": "https://yashvardhan.dev/#person",
           "name": "Yashvardhan Singh Shaktawat",
-          "jobTitle": "Full Stack Developer & IoT Engineer",
-          "knowsAbout": [
-            "Full Stack Web Development",
-            "Internet of Things (IoT)",
-            "Applied Machine Learning",
-            "Computer Vision",
-            "Django",
-            "React.js",
-            "Redis",
-            "WebSockets"
-          ],
-          "alumniOf": {
-            "@type": "EducationalOrganization",
-            "name": "B.Tech Computer Science & Engineering student"
-          },
+          "jobTitle": "Full Stack React Developer & AI Engineer",
           "url": "https://yashvardhan.dev",
-          "image": "https://yashvardhan.dev/src/assets/about-me.png",
+          "image": "https://yashvardhan.dev/assets/about-me.webp",
           "sameAs": [
             "https://github.com/Yashvardhan-Singh-Shaktawat",
             "https://www.linkedin.com/in/yashvardhan-singh-7969912ba/",
             "https://docs.google.com/document/d/1ljfpW5bmO3hLKCiRATboFy6b0CfRslf7/edit"
+          ],
+          "knowsAbout": [
+            "React.js",
+            "Next.js",
+            "Node.js",
+            "Django",
+            "Python",
+            "JavaScript",
+            "Machine Learning",
+            "Computer Vision",
+            "WebSockets",
+            "Redis",
+            "Internet of Things"
+          ],
+          "alumniOf": {
+            "@type": "EducationalOrganization",
+            "name": "B.Tech Computer Science & Engineering"
+          }
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "WebSite",
+          "@id": "https://yashvardhan.dev/#website",
+          "url": "https://yashvardhan.dev",
+          "name": "Yashvardhan Singh Shaktawat Portfolio",
+          "author": {
+            "@id": "https://yashvardhan.dev/#person"
+          }
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Who is Yashvardhan Singh Shaktawat?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yashvardhan is a Full Stack Developer, React/Next.js Engineer, and AI/ML specialist based in India who builds production-grade software applications, machine learning models, and cloud-connected IoT systems."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What are Yashvardhan's primary technical skills?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "His primary skills include React, Next.js, Django, Node.js, Express, Python, JavaScript, scikit-learn, WebSockets, Redis, MongoDB, PostgreSQL, and ESP32 IoT microcontrollers."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What projects has Yashvardhan built?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "He has built several notable projects including Maharaj AI (an AI recipe engine), WeaveMind (a computer vision textile loom monitor using YOLOv8), LabManagerPro (a sub-500ms lab screen streaming tool), and SolarMonitor-IoT (a smart energy telemetry system)."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is Yashvardhan available for remote work?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, Yashvardhan is available for full-time remote developer positions, freelance contracts, and internships globally."
+              }
+            }
           ]
         }
-      }
+      ]
     </script>
   </head>
   <body>
